@@ -1,10 +1,6 @@
 # clojure-bootcamp-20150130
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
-
-FIXME
+Clojure Bootcamp example for Affecto.
 
 ## License
 
