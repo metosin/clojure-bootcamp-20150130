@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  
+  <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+    <resetJUL>true</resetJUL>
+  </contextListener>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <charset>UTF-8</charset>
+      <pattern>%.-1level %d{YYYY/MM/dd HH:mm:ss.SSS} - %logger{36} : %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <root level="DEBUG">
+    <appender-ref ref="STDOUT"/>
+  </root>
+  
+  <logger name="sun" level="INFO"/>
+  <logger name="com.zaxxer.hikari" level="INFO"/>
+  <logger name="HikariPool" level="INFO"/>
+  
+</configuration>
